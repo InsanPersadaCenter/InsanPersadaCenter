@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>yayasan</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<link rel="stylesheet" type="text/css" href="css/login-style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yayasan</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="css/login-style.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/login-style.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+  </head>
 
-	<form action="index.html" class="login-form">
-		<h1>Login Donatur</h1>
-		<div class="text-class">
-			<input type="text">
-			<span data-placeholder="Email"></span>
-		</div>
-		<div class="text-class">
-			<input type="password">
-			<span data-placeholder="Password"></span>
-		</div>
+  <body>
+    <div class="container">
+    <div class="content">
+      <form action="index.html" class="login-form">
+        <h1>LOGIN FORM</h1>
+        <div class="user-details">
+          <div class="text-class">
+            <input type="text">
+            <span placeholder="Masukan Email" required /></span>
+          </div>
+          <div class="text-class">
+            <input type="password" />
+            <span placeholder="Masukan Password" required ></span>
+          </div>
 
-		<input class="btn-login" type="submit" value="login">
-			<div class="bottom">
-				tidak punya akun ? <a href="#">Register</a>
-			</div>
-			<div class="close">
-				<a href="index.html"><i class="fa fa-arrow-left"></i></a>
-				<a href="admin/login-admin.html"><i class="fa fa-user"></i></a>
-			</div>
-			
-	</form>
+          <input class="btn-login" type="submit" value="login" />
+          <div class="bottom">tidak punya akun ? <a href="#">Register</a></div>
+          <div class="close">
+            <a href="index.html"><i class="fa fa-arrow-left"></i></a>
+            <a href="admin/login-admin.html"><i class="fa fa-user"></i></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
+    <script type="text/javascript">
+      $(".text-class input").on("focus", function () {
+        $(this).addClass("focus");
+      });
 
-<script type="text/javascript">
-	$(".text-class input").on("focus",function(){
-		$(this).addClass("focus");
-	});
-
-	$(".text-class input").on("blur",function(){
-		if ($(this).val()=="")
-		$(this).removeClass("focus");
-	});
-
-</script>
-</body>
+      $(".text-class input").on("blur", function () {
+        if ($(this).val() == "") $(this).removeClass("focus");
+      });
+    </script>
+  </body>
 </html>
