@@ -6,20 +6,22 @@
 	box-sizing: border-box ;
 }
 body{
-	min-height: 100vh;
 	background-color: white;
 }
 
 .login-form{
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   background: #f1f1f1;
   height: 580px;
+  z-index: 1;
   padding: 80px 40px;
   border-radius: 10px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
+  margin-top: -286px;
 }
 
 .login-form h1{
@@ -127,8 +129,24 @@ body{
  margin-right: 5px;
 }
 
-@media (max-width: 400px) {
- 	 .login-form{
-  		width: 100%;
+
+ @media (max-width: 600px) {
+ 	.login-form{
+  		margin-top: 0;
+      top: 10px;
   	}
+
+  }
+  @media (max-width: 400px){
+    .login-form{
+      left: 5px;
+      margin-left: 5px;
+      min-width: 283px;
+      right: 10px;
+      margin-bottom: 10px;
+      width: auto;
+    }
+    .text-class input{
+      width: 140px;
+    }
   }
