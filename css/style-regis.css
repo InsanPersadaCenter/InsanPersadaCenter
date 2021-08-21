@@ -55,7 +55,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #9b59b6;
+  border-color: #FFA500;
 }
  form .gender-details .gender-title{
   font-size: 20px;
@@ -103,12 +103,12 @@ form .input-box span.details{
    font-weight: 500;
    letter-spacing: 1px;
    cursor: pointer;
-   transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   transition: all 0.5s ease;
+   background: #B22222;
  }
  form .button input:hover{
-  /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  transform: scale(0.99);
+  background: #8B0000;
   }
 
   .close{
