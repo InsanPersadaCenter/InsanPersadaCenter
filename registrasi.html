@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/style-regis.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="close">
+        <a href="login.html"><i class="fa fa-arrow-left"></i></a>
+      </div>
+
+      <div class="title">Registrasi Donatur</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">No KTP</span>
+              <input type="text" placeholder="Masukan Nik" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Nama Lengkap</span>
+              <input type="text" placeholder="Masukan nama lengkap" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Alamat</span>
+              <input type="text" placeholder="Masukan Alamat" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Pekerjaan</span>
+              <input type="text" placeholder="Masukan Pekerjaan" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Masukan Email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Masukan No Telepon</span>
+              <input type="text" placeholder="Masukan No Telepon" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Password" required />
+            </div>
+          </div>
+
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
