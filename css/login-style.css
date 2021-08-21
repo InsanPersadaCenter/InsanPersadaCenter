@@ -138,13 +138,14 @@ body{
 
   }
   @media (max-width: 400px){
+    
     .login-form{
       left: 5px;
       margin-left: 5px;
       min-width: 283px;
       right: 10px;
       margin-bottom: 10px;
-      width: auto;
+      width: 100%;
     }
     .text-class input{
       width: 140px;
